@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>travel</title>
+    <meta name="viewport"content="width=device-width,initial-scale=1">
+  
+    <style>
+        body{
+            margin: 0;
+
+        }
+        .header{
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            
+        }
+        ul{
+            display: flex;
+             list-style-type: none;
+             gap: 10px;
+             flex-wrap: wrap;
+
+        }
+        .icon_area{
+            margin-left: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+        }
+
+        .icon_area{
+            font-weight: bolder;
+            font-size: 100px;
+            margin-top: 30px;
+        }
+        .menu_area{
+          margin-right: 10px;  
+        }
+        .li{
+            padding:5px ;
+            border: radius 2px; 
+            transition: transform 0.5s , background-color 0.5s;
+        }
+        li.hover{
+            transform: scale(1.1);
+            background-color: aliceblue;
+            border-bottom: 2px solid black;
+            cursor: pointer;
+        }
+        .main_content{
+            height: 500px;
+            background-repeat: no-repeat;
+            background-size:cover ;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        .main_heading{
+            font-family:"Bungee Tint",system-ui;
+        }
+        .services{
+         display: flex;
+         flex-wrap: wrap;
+         width: 100%;
+         margin-top: 20px;
+         justify-content:space-evenly ;
+        }
+        .services_heading{
+            text-align: center;
+
+        }
+        .card1,.card2,.card3,.card_img1,.card_img2,.card_img3{
+            max-width: 300px;
+            border: 1px solid black;
+            text-align: center;
+            border-radius: 5px;
+        }
+        .about_us{
+            padding-top: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            background-color: aliceblue;
+            justify-content: space-evenly;
+
+        }
+        .side_img{
+            max-width: 400px;
+        }
+        .side_text{
+            max-width: 500px;
+            text-align: justify;
+
+        }
+        .g1,.g2,.g3,.g4,.g5,.g6{
+            max: width 400px; 
+            cursor: pointer;
+            transition: transform 1s;
+        }
+         .g1:hover,.g2:hover,.g3:hover,.g4:hover,.g5:hover,.g6:hover{
+            transform: scale(1.1);
+         }
+         .gallery_text{
+            position: absolute;
+            width: 100%;
+            font-size: 2rem;
+            text-align: center;
+            margin-top: 80px;
+         }
+         .footer{
+            text-align: center;
+            background-color:black;
+            color: wheat;
+            padding: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+         }
+         @media only screen and (max-width:700px){
+            .gallery{
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+            .side_text{
+                padding: 10px;
+            }
+            .card1,.card2,.card3{
+                margin-bottom: 10px;
+            }
+            .gallery_text{
+                position: static;
+                margin-top: 10px;
+            }
+            .menu_area{
+                display: none;
+            }
+         }
+            
+         
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="icon_area">
+                <img src="flight.jpg" class="icon">
+                <span class="icon_area">travel</span>
+
+            </div>
+            <div class="menu_area">
+                <ul>
+                    <li>Home</li>
+                    <li>services</li>
+                    <li>about us</li>
+                    <li>gallery</li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="content">
+            <div class="main content">
+                <h2 class="main_heading">Travel with no limits</h2>
+                <p>Travel is the movement of people between geographical location</p>
+
+            </div>
+            <h1 class="services_heading">our services</h1>
+            <div class="services">
+                <div class="card1">
+                    <img src="island flight.jpg" class="Card_img1">
+                    <p>Travel with all the freeness</p>
+                </div>
+                <div class="card2">
+                    <img src="reception.jpg" class="Card_img2">
+                    <p>we will give 24/7 support ,always with you</p>
+                </div>
+
+                <div class="card3">
+                    <img src="toy.jpg" class="card_img3">
+                    <p>Travel with affordable prices,Budget friendly</p>
+                </div>
+
+            </div>
+            <div class="about_us">
+                <img src="flight 2.0.jpg" class="side_img">
+                <div class="side_text">
+                    <h1>ABbout Us</h1>
+                    <p>welcome to travel your ultimate partner in exploring the world !with a passion for travel and a commitment to 
+                        experience services, we specialize in crafting unforgettable tailored just for you.founded in 2000,our agence has been dedicated to turning your dream vauations into reality our team of relaxing design 
+                    </p>
+
+                </div>
+
+            </div>
+            <div class="gallery">
+                <h2 class="gallery_text">Our gallery</h2>
+                <img src="ship.jpg" class="g1">
+                <img src="mountain.jpg" class="g2">
+                <img src="island boating.jpg" class="g3">
+                <img src="girls laugh.jpg" class="g4">
+                <img src="parashute.jpg" class="g5">
+                <img src="boating view.jpg" class="g6">
+
+
+
+            </div>
+        </div>
+        <div class="footer">
+            <div class="address">
+                123 East Texas ,<br>
+                california,south <br>
+                united states
+
+            </div>
+            <div class="contact">
+                <p>Travel@gmail.com</p>
+                <p>+91123456789</p>
+                <p>@2024</p>
+
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
